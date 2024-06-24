@@ -21,9 +21,10 @@ class MainActivity : AppCompatActivity() {
             intent = Intent(this,secondactivity::class.java)
            //throw NullPointerException("demo vit")
             //val c = 10+20
+            add(10,20)
             startActivity(intent)
         }
-        add(10,20)
+
         Log.i(tag ,"activity is getting creeatead")
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
