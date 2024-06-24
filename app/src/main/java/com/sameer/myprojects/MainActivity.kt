@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         val bnt = findViewById<Button>(R.id.button)
         bnt.setOnClickListener {
             intent = Intent(this,secondactivity::class.java)
+           throw NullPointerException("demo vit")
             startActivity(intent)
         }
         Log.i(tag ,"activity is getting creeatead")
@@ -27,6 +28,8 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
+
+
 
     override fun onStart() {
         super.onStart()
