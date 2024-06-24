@@ -1,7 +1,8 @@
 package com.sameer.myprojects.kotlinex
-fun main(){
+fun main() {
 
 
     val myobj:Student = Student("sammer",123,"chhenai")
-    println(myobj.name)
-}
+    println(myobj.name)}
+    //val obj:print=print()
+   // obj.somegthing()
