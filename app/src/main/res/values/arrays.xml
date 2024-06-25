@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="languages">
-        <string>English</string>
-        <string>telugu</string>
-        <string>hindi</string>
-        <string>urdu</string>
+        <item>English</item>
+        <item>Telugu</item>
+        <item>Hindi</item>
+        <item>Urdu</item>
     </string-array>
 </resources>
