@@ -120,7 +120,7 @@
         android:layout_margin="20dp"
         android:textSize="18dp"
         android:textStyle="bold"
-        android:text="If already registered please click 0n sigin" />
+        android:text="If already registered please click on sign in" />
 
 
 </LinearLayout>
