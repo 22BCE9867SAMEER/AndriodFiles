@@ -13,10 +13,13 @@
         android:theme="@style/Theme.MyProjects"
         tools:targetApi="31">
         <activity
+            android:name=".yclass.Welcome"
+            android:exported="false" />
+        <activity
             android:name=".yclass.signin"
             android:exported="false" />
         <activity
-            android:name=".yclass.sigup"
+            android:name=".yclass.Sigup"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,16 +29,10 @@
         </activity>
         <activity
             android:name=".thirdactivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".secondactivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />
