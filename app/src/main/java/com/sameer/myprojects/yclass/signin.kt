@@ -16,9 +16,9 @@ import com.sameer.myprojects.R
 class signin : AppCompatActivity() {
     lateinit var databasereference:DatabaseReference
     companion object{
-        const val KEY1 = "com.sameer.myprojects.yclass.KEY"
-        const val KEY2 = "com.sameer.myprojects.yclass.KEY"
-        const val KEY3 = "com.sameer.myprojects.yclass.KEY"
+        const val KEY1 = "com.sameer.myprojects.yclass.mail"
+        const val KEY2 = "com.sameer.myprojects.yclass.name"
+        const val KEY3 = "com.sameer.myprojects.yclass.id"
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,8 +52,8 @@ class signin : AppCompatActivity() {
         databasereference.child(uniqueid).get().addOnSuccessListener {
             if(it.exists()){
                 val email = it.child("mail").value
-                val uname = it.child("name").value
-                val uid =it.child("uniqueid").value
+                val uname = it.child("username").value
+                val uid =it.child("id").value
                 //val intentwelcome = Intent(this,)
                 val intent = Intent(this,Welcome::class.java)
                 intent.putExtra(KEY1,email.toString())
