@@ -48,16 +48,15 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
-
     <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/checkbox"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
            android:layout_margin="20dp"
-            android:text=" Accept all t&amp;c" />
+            android:text=" Accept all t&amp;c"  />
 
     <Button
-        android:id="@+id/bnt"
+        android:id="@+id/button2"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
