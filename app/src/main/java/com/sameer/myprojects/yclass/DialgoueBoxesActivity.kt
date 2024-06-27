@@ -15,7 +15,7 @@ class DialgoueBoxesActivity : AppCompatActivity() {
     lateinit var bind:ActivityDialgoueBoxesBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+bind = ActivityDialgoueBoxesBinding.inflate(layoutInflater)
         enableEdgeToEdge()
         setContentView(bind.root)
         bind.bnt1.setOnClickListener {
@@ -42,7 +42,7 @@ class DialgoueBoxesActivity : AppCompatActivity() {
             })
             bulider2.setPositiveButton("submit",DialogInterface.OnClickListener { dialog, which ->
                 //what action should we perform
-                finish()
+
             })
             bulider2.setNegativeButton("decline",DialogInterface.OnClickListener { dialog, which ->
 
