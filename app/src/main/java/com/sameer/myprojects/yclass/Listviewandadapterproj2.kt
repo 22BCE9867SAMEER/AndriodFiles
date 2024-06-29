@@ -1,12 +1,14 @@
 package com.sameer.myprojects.yclass
 
 import android.app.Person
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.sameer.myprojects.NextActivity
 import com.sameer.myprojects.R
 
 class Listviewandadapterproj2 : AppCompatActivity() {
@@ -29,6 +31,19 @@ class Listviewandadapterproj2 : AppCompatActivity() {
         )
         listview.isClickable=true
         listview.adapter= Myadapter(this,array)
+
+        listview.setOnItemClickListener { parent, view, position, id ->
+            val nam = name[position]
+            val phone = phonenumber[position]
+            val lastmg = lastmg[position]
+            val imgid = imageid[position]
+            //pasing the data
+            val i = Intent(this,NextActivity::class.java)
+            i.putExtra("name",nam)
+            i.putExtra("phonenumber",phone)
+            i.putExtra("lastmessage",lastmg)
+            i.putExtra("imageid",imgid)
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

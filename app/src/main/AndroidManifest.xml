@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyProjects"
         tools:targetApi="31">
         <activity
+            android:name=".NextActivity"
+            android:exported="false" />
+        <activity
             android:name=".yclass.Listviewandadapterproj2"
             android:exported="true">
             <intent-filter>
