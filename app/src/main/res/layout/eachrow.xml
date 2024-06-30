@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="20dp"
+    android:id="@+id/cardview"
+    app:cardElevation="5dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+app:shapeAppearanceOverlay="@style/softconer"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pic0"
+            android:layout_marginTop="3dp"
+            android:id="@+id/newsimg"
+>
+        </com.google.android.material.imageview.ShapeableImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textheading"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:text="Floridians taste ‘lab-grown’ meat for last time before state ban"
+
+            ></TextView>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

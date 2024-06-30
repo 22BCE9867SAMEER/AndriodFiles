@@ -18,7 +18,7 @@ class NextActivity : AppCompatActivity() {
         val phone = intent.getStringExtra("phonenumber")
         val lastmsg = intent.getStringExtra("lastmessage")
         val img = intent.getIntExtra("imageid",R.drawable.reedy)
-        val nm = findViewById<TextView>(R.id.textname)
+        val nm = findViewById< TextView>(R.id.textname)
         val ph = findViewById<TextView>(R.id.textphone)
         val lm = findViewById<TextView>(R.id.textlastmsg)
         val imge = findViewById<CircleImageView>(R.id.profile1_img)

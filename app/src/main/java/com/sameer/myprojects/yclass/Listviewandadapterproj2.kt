@@ -43,6 +43,7 @@ class Listviewandadapterproj2 : AppCompatActivity() {
             i.putExtra("phonenumber",phone)
             i.putExtra("lastmessage",lastmg)
             i.putExtra("imageid",imgid)
+            startActivity(i)
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
