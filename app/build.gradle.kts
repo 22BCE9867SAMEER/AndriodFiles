@@ -49,10 +49,15 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    // Add CircleImageView dependency
     implementation ("de.hdodenhof:circleimageview:3.1.0")
+    // retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    // gson converter
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
 
 }
 
 
-    // Add CircleImageView dependency
+
 
