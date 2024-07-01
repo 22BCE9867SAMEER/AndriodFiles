@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".yclass.RecyclerView.NextViewsActivity">
+
+
+    <ImageView
+        android:id="@+id/imagerohit"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/rohit1" />
+
+    <TextView
+        android:id="@+id/newsheadingtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+
+        android:textSize="25dp"
+        android:layout_margin="5dp"
+
+        android:text="France’s exceptionally high-stakes elections have begun as support for the far right grows" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/textnewscontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:text="@string/newscontent" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -15,12 +15,21 @@ import java.util.ArrayList
 
 class Myadapter1(private val newarraylist : ArrayList<News>, private val context:Activity):
 RecyclerView.Adapter<Myadapter1.MyViewHolder>(){
+    private  lateinit var mylisterner:onitemclicklisterner
+    //create an interface
+    interface onitemclicklisterner{
+        fun onitemclick(position:Int)
 
+    }
+
+    fun setonitemclicklisterner(listerner:onitemclicklisterner){
+        mylisterner=listerner
+    }
 //to create the new view instance
     //when layout manager fails to find a suitable view for each iteam int he list
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Myadapter1.MyViewHolder {
         val itemview = LayoutInflater.from(parent.context).inflate(R.layout.eachrow,parent,false)
-       return MyViewHolder(itemview)
+       return MyViewHolder(itemview,mylisterner)
     }
 //populates item with    the data z
 
@@ -35,9 +44,14 @@ RecyclerView.Adapter<Myadapter1.MyViewHolder>(){
         return newarraylist.size
 
     }//it holds the views so the view are created evertime and memory is saved
-    class MyViewHolder(itemView :View):RecyclerView.ViewHolder(itemView) {
+    class MyViewHolder(itemView :View,listerner:onitemclicklisterner):RecyclerView.ViewHolder(itemView) {
         val headinf = itemView.findViewById<TextView>(R.id.textheading)
         val img = itemView.findViewById<ShapeableImageView>(R.id.newsimg)
+        init{
+            itemView.setOnClickListener{
+                listerner.onitemclick(adapterPosition)
+            }
+        }
 
     }
 
