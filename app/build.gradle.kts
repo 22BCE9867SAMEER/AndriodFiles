@@ -57,7 +57,9 @@ dependencies {
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
     //picasso to get image fronm the link
     implementation ("com.squareup.picasso:picasso:2.8")
-
+//notification manager
+    // Notification manager dependency
+    implementation("androidx.core:core-ktx:1.9.0")
 }
 
 
