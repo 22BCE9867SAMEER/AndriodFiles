@@ -51,10 +51,10 @@
       </SelectionState>
       <SelectionState runConfigName="NotificationActivity">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-07-03T09:14:02.774274200Z">
+        <DropdownSelection timestamp="2024-07-03T12:55:04.826157300Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="PhysicalDevice" identifier="serial=RZCT91RX84A" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\samee\.android\avd\my_phone.avd" />
             </handle>
           </Target>
         </DropdownSelection>
