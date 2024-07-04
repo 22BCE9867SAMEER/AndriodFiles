@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "594062593924",
+    "project_id": "my-projects-ab1e8",
+    "storage_bucket": "my-projects-ab1e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594062593924:android:7275140eb533357df957d1",
+        "android_client_info": {
+          "package_name": "com.sameer.myprojects"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb2IJa_UzhwYeEvd7LWrPR5wxF9dOpFG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
