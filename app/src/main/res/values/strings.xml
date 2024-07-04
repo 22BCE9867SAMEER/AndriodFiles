@@ -7,4 +7,13 @@ The final over saw 36 runs being scored with five sixes, taking India to a total
 India were reeling at the beginning of the innings after opting to bat first with Yashasvi Jaiswal (4), Virat Kohli (0), Shivam Dube (1) and Sanju Samson (0) all falling cheaply."</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 </resources>
