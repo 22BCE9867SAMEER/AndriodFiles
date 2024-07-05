@@ -17,6 +17,7 @@ class FragmentActivity : AppCompatActivity() {
         val bntclock = findViewById<Button>(R.id.buttonclock)
         val bntexam = findViewById<Button>(R.id.buttonexam)
       val   bntvalid  = findViewById<Button>(R.id.buttonvalidate)
+
         bntclock.setOnClickListener {
             Replacewithfragemnt(Clock())
 

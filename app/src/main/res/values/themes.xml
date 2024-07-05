@@ -6,9 +6,19 @@
     </style>
 
     <style name="Theme.MyProjects" parent="Base.Theme.MyProjects" />
+
     <style name="softconer">
-        <item name="cornerFamily"> rounded</item>
+        <item name="cornerFamily">rounded</item>
         <item name="cornerSize">10dp</item>
         <item name="color">@color/white</item>
     </style>
+
+    <style name="Theme.MyProjects.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MyProjects.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MyProjects.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

@@ -67,6 +67,7 @@ class NotificationActivity : AppCompatActivity() {
 
     private fun createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            // we can put the importance of the notification
             val channel = NotificationChannel(CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_DEFAULT).apply {
                 description = "This is my notification channel"
                 lightColor = Color.RED
