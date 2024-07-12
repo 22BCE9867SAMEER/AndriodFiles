@@ -16,6 +16,15 @@
         android:theme="@style/Theme.MyProjects"
         tools:targetApi="31">
         <activity
+            android:name=".Projects.MUSICLIST"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".yclass.Mediaplayer.MediaplayerActivity"
             android:exported="true">
             <intent-filter>
