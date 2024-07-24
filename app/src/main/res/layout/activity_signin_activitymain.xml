@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sigin"
+    tools:context=".SigninActivitymain">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/quickchat"
+></ImageView>
+
+    <EditText
+        android:id="@+id/entermail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#14E51E"
+        android:layout_margin="20dp"
+
+        android:hint="Enter your mail"
+        android:drawableStart="@drawable/baseline_email_24"
+        
+
+        android:textColorHint="#0DF818"
+        android:inputType="text"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/entername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawableStart="@drawable/baseline_lock_24"
+android:paddingLeft="5dp"
+
+        android:layout_margin="20dp"
+        android:hint="Enter password"
+        android:textColorHint="#0DF818"
+        android:inputType="textPassword"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/buttonloginpage"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#C4CA2A"
+
+        android:text="login" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="create a new account if not exist by clicking sigup"
+        android:layout_marginLeft="15dp"
+        android:textSize="15dp"
+
+        android:textColor="#D33D0E">
+
+    </TextView>
+
+
+    <Button
+        android:id="@+id/buttonsiguppage"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#C4CA2A"
+        android:text="sigup" />
+</LinearLayout>

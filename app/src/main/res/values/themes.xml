@@ -1,11 +1,31 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.MyProjects" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.MyProjects"
+        parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+
+        <item name="colorPrimary">#0A79E7</item>
+        <item name ="colorPrimaryVariant">#0A79E7</item>
+        <item name="colorOnPrimary">#0A79E7</item>
+        //secondary
+       <item name="colorSecondary">#ED4611</item>
+        <item name="colorOnSecondary">@color/red</item>
+        <item name="colorSecondaryVariant">@color/red</item>
+
+
+        //status bar
+        <item name="android:statusBarColor" tools:targetApi="22">?attr/colorSecondary</item>
+
+
+
     </style>
 
     <style name="Theme.MyProjects" parent="Base.Theme.MyProjects" />
+
+
+
+
 
     <style name="softconer">
         <item name="cornerFamily">rounded</item>
@@ -13,12 +33,16 @@
         <item name="color">@color/white</item>
     </style>
 
+
+
+
     <style name="Theme.MyProjects.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
     </style>
 
     <style name="Theme.MyProjects.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.MyProjects.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

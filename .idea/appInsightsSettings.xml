@@ -9,9 +9,9 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="com.sameer.myprojects" />
-                  <option name="mobileSdkAppId" value="1:594062593924:android:7275140eb533357df957d1" />
-                  <option name="projectId" value="my-projects-ab1e8" />
-                  <option name="projectNumber" value="594062593924" />
+                  <option name="mobileSdkAppId" value="1:226370134472:android:75dd4b4014dc911d4260fd" />
+                  <option name="projectId" value="mybasicchatapp-370ae" />
+                  <option name="projectNumber" value="226370134472" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
